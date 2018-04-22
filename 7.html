@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/vue.2.5.13.min.js"></script>
+    <title>产品介绍</title>
+</head>
+
+<body>
+    <div class="index-content">
+        <!-- 顶部图片开始 -->
+        <div class="index-header">
+            <img class="index-header-img" src="images/10.jpg" />
+        </div>
+        <!-- 顶部图片结束 -->
+        <!-- 菜单开始 -->
+        <div class="index-menu">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                	<a class="btn btn-success form-control" href="index.html">首页▼</a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div>
+                        <a class="btn btn-success form-control" href="javascript:void(0);" onclick="showMenu(this)">产品分类▼</a>
+                    </div>
+                    <div class="index-menu-child">
+                        <ol>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类1</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类2</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类3</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <a class="btn btn-success form-control" href="10.html">联系我们▼</a>
+                </div>
+            </div>
+        </div>
+        <!-- 菜单结束 -->
+        <!-- 产品展示框开始 -->
+        <br />
+        <div id="index-header">
+            
+                  <center>  <img class="index-header-img1" src="images/7.jpg" /></center>
+             
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <p>   脉冲除尘器</p><hr/>
+            <p>
+                脉冲除尘器是在袋式除尘器的基础上改进的新型高效脉冲除尘器，综合了分室反吹各种脉冲喷吹除尘器的优点，克服了分室清灰强度不够，进出风分布不均等缺点，扩大了应用范围。
+            脉冲除尘器是指通过喷吹压缩空气的方法除掉过滤介质（布袋或滤筒）上附着的粉尘；根据除尘器的大小可能有几组脉冲阀，由脉冲控制仪或PLC控制，每次开一组脉冲阀来除去它所控制的那部分布袋或滤筒的灰尘，
+            而其他的布袋或滤筒正常工作，隔一段时间后下一组脉冲阀打开，清理下一部分除尘器由灰斗、上箱体、中箱体、下箱体等部分组成，上、中、下箱体为分室结构。
+            </p><hr/>
+            
+        </div>
+        <!-- 产品展示框结束 -->
+    <div id="thediv"><a href="tel:18333727005"><img src="images/11.jpg" /></a></div> 
+        <div><h3> <marquee><b>欢迎访问本网站，祝您家庭愉快生活幸福！</b></marquee></h3></div>
+
+</body>
+<script>
+    $(window).ready(function (e) {
+        $('.index-menu-child').hide();
+    });
+    function showMenu(object) {
+        $(object).parent().next().toggle();
+    }
+</script>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

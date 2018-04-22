@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/vue.2.5.13.min.js"></script>
+    <title>产品介绍</title>
+</head>
+
+<body>
+    <div class="index-content">
+        <!-- 顶部图片开始 -->
+        <div class="index-header">
+            <img class="index-header-img" src="images/10.jpg" />
+        </div>
+        <!-- 顶部图片结束 -->
+        <!-- 菜单开始 -->
+        <div class="index-menu">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                	<a class="btn btn-success form-control" href="index.html">首页▼</a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div>
+                        <a class="btn btn-success form-control" href="javascript:void(0);" onclick="showMenu(this)">产品分类▼</a>
+                    </div>
+                    <div class="index-menu-child">
+                        <ol>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类1</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类2</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类3</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <a class="btn btn-success form-control" href="10.html">联系我们▼</a>
+                </div>
+            </div>
+        </div>
+        <!-- 菜单结束 -->
+        <!-- 产品展示框开始 -->
+        <br />
+        <div id="index-header">
+            
+              <center>    <img class="index-header-img1" src="images/3.jpg" /></center>  
+             
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <p>   蛟龙输送机又称螺旋输送机。</p><hr/>
+            <p>   <h3>蛟龙输送机特点</h3><hr/>
+                1 、螺旋轴与吊轴承、头、尾轴联接均采用嵌入舌式，安装、拆卸不需轴向移动，维修方便。、芯轴长、吊挂少、故障点少
+
+                2 、采用变径结构，增大吊轴承处容积，避免吊轴承与物料接触，吊轴承寿命可达两年以上。
+
+                3 、各传动部位均采用浮动连接方式，吊轴承为万向节结构，使螺旋体，吊轴承和尾部总成形成一个整体旋浮体，在一定范围内可随输送阻力自由旋转避让，不卡料，不堵料。
+
+                4 、头尾轴承座均在壳体外，所有轴承采用多层密封和配合密封技术，轴承使用寿命长。
+            </p>
+
+        </div>
+        <!-- 产品展示框结束 -->
+        <div> <h3> <marquee><b>欢迎访问本网站，祝您家庭愉快生活幸福！</b></marquee></h3></div>
+    </div>
+</body>
+<script>
+    $(window).ready(function (e) {
+        $('.index-menu-child').hide();
+    });
+    function showMenu(object) {
+        $(object).parent().next().toggle();
+    }
+</script>
+</html>

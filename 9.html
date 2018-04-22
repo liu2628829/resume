@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/vue.2.5.13.min.js"></script>
+    <title>产品介绍</title>
+</head>
+
+<body>
+    <div class="index-content">
+        <!-- 顶部图片开始 -->
+        <div class="index-header">
+            <img class="index-header-img" src="images/10.jpg" />
+        </div>
+        <!-- 顶部图片结束 -->
+        <!-- 菜单开始 -->
+        <div class="index-menu">
+            <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                	<a class="btn btn-success form-control" href="index.html">首页▼</a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div>
+                        <a class="btn btn-success form-control" href="javascript:void(0);" onclick="showMenu(this)">产品分类▼</a>
+                    </div>
+                    <div class="index-menu-child">
+                        <ol>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类1</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类2</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类3</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <a class="btn btn-success form-control" href="10.html">联系我们▼</a>
+                </div>
+            </div>
+        </div>
+        <!-- 菜单结束 -->
+        <!-- 产品展示框开始 -->
+        <br />
+
+        <div id="index-header">
+               <center>    <img class="index-header-img1" src="images/9.jpg" /></center> 
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <p>   除尘布袋</p><hr/>
+            <p>
+            
+               布袋除尘器是一种干式除尘装置,它适用于捕集细小、干燥非纤维性粉尘。
+            滤袋采用纺织的滤布或非纺织的毡制成，利用纤维织物的过滤作用对含尘气体进行过滤，
+            当含尘气体进入布袋除尘器，颗粒大、比重大的粉尘，
+            由于重力的作用沉降下来 ，落入灰斗，含有较细小粉尘的气体在通过滤料时，粉尘被阻留，使气体得到净化。 </p><hr/>
+            
+        </div>
+        <!-- 产品展示框结束 -->
+    <div id="thediv"><a href="tel:18333727005"><img src="images/11.jpg" /></a></div> 
+        <div><h3> <marquee><b>欢迎访问本网站，祝您家庭愉快生活幸福！</b></marquee></h3></div>
+   
+</body>
+<script>
+    $(window).ready(function (e) {
+        $('.index-menu-child').hide();
+    });
+    function showMenu(object) {
+        $(object).parent().next().toggle();
+    }
+</script>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.2.5.13.min.js"></script>
+<script src="js/run.js"></script>
+<title>产品介绍</title>
+
+</head>
+
+<body>
+	<div class="index-content">
+    	<!-- 顶部图片开始 -->
+    	<div class="index-header">
+        	<img class="index-header-img" src="images/10.jpg"/>
+        </div>
+        <!-- 顶部图片结束 -->
+        <!-- 菜单开始 -->
+        <br />
+        <div class="index-menu">
+        	<div class="row">
+            	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                	<a class="btn btn-success form-control" href="index.html">首页▼</a>
+                </div>
+            	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                	<div>
+                		<a class="btn btn-success form-control" href="javascript:void(0);" onClick="showMenu(this)">产品分类▼</a>
+                    </div>
+                    <div class="index-menu-child">
+                    	<ol>
+                        	<li>
+                            	<a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类1</a>
+                            </li>
+                        	<li>
+                            	<a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类2</a>
+                            </li>
+                        	<li>
+                            	<a class="btn btn-success form-control" href="http://blog.hs5233.com">产品分类3</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                	<a class="btn btn-success form-control" href="10.html">联系我们▼</a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- 菜单结束 -->
+        <!-- 产品展示框开始 -->
+        <div id="displayContent">
+        	<div v-for="item in items">
+                <div class="displayBox">
+                    <a :href="item.href">
+                        <div class="displayImgBox">
+                            <img :src="item.src" class="displayImg" />
+                        </div>
+                        <div class="displayText">
+                            {{item.text}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="thediv"><a href="tel:18333727005"><img src="images/11.jpg" /></a></div> 
+        <!-- 产品展示框结束 -->
+        <div><h3><marquee><b>欢迎访问本网站，祝您家庭愉快生活幸福！</b></marquee></h3></div>
+    </div> 
+</body>
+<script>
+	$(window).ready(function(e) {
+		$('.index-menu-child').hide();
+	});
+	var dataItems = new Array();
+	var dataTmp = new Array();
+	var dataTmp1 = new Array();
+	var dataTmp2 = new Array();
+	var dataTmp3 = new Array();
+	var dataTmp4 = new Array();
+	var dataTmp5 = new Array();
+	var dataTmp6 = new Array();
+	var dataTmp7 = new Array();
+	var dataTmp8 = new Array();
+	dataTmp['text'] = '翻板阀';
+	dataTmp['src'] = 'images/1.jpg';
+	dataTmp['href'] = '1.html';
+
+	dataTmp1['text'] = '翻板阀';
+	dataTmp1['src'] = 'images/2.jpg';
+	dataTmp1['href'] = '2.html';
+	
+	dataTmp2['text'] = '蛟龙输送机';
+	dataTmp2['src'] = 'images/3.jpg';
+	dataTmp2['href'] = '3.html';
+
+	dataTmp3['text'] = '蛟龙输送机';
+	dataTmp3['src'] = 'images/4.jpg';
+	dataTmp3['href'] = '4.html';
+
+	dataTmp4['text'] = '除尘器骨架';
+	dataTmp4['src'] = 'images/5.jpg';
+	dataTmp4['href'] = '5.html';
+
+	dataTmp5['text'] = '除尘器布袋';
+	dataTmp5['src'] = 'images/6.jpg';
+	dataTmp5['href'] = '6.html';
+
+	dataTmp6['text'] = '除尘器布袋';
+	dataTmp6['src'] = 'images/7.jpg';
+	dataTmp6['href'] = '7.html';
+
+	dataTmp7['text'] = '除尘器脉冲阀';
+	dataTmp7['src'] = 'images/8.jpg';
+	dataTmp7['href'] = '8.html';
+
+	dataTmp8['text'] = '除尘器布袋';
+	dataTmp8['src'] = 'images/9.jpg';
+	dataTmp8['href'] = '9.html';
+
+	dataItems.push(dataTmp);
+	dataItems.push(dataTmp1);
+	dataItems.push(dataTmp2);
+	dataItems.push(dataTmp3);
+	dataItems.push(dataTmp4);
+	dataItems.push(dataTmp5);
+	dataItems.push(dataTmp6);
+	dataItems.push(dataTmp7);
+	dataItems.push(dataTmp8);
+	
+	
+	var vm = new Vue({
+		el: '#displayContent',
+		data: {
+			items: dataItems
+		},
+		methods:{
+		}
+	});
+		
+	function showMenu(object){
+		$(object).parent().next().toggle();
+	}
+</script>
+</html>
